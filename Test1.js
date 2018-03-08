@@ -91,6 +91,11 @@ const test_case_1 = async () => {
 
 }
 
+const test_case_2 = async () => {
+    const start = Date.now()
+    await driver.sleep (1000)
+    await login_by_avdsh()
+}
 
 
 driver.get('https://curator.develop.wowworks.ru/auth/login');
